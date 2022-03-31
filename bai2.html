@@ -15,7 +15,15 @@
                 dem++
             }
         } return dem
-    } document.write(timGiaTri(a,chuoi))
+    } document.write(timGiaTri(a,chuoi) + "<br>")
+    function timViTri(a,chuoi){
+        let dem = 0;
+        for(let i=0 ; i < chuoi.length ; i ++){
+            if(a==chuoi[i]){
+                return i;
+            }
+        }
+    } document.write(timViTri(a,chuoi))
 </script>
 </body>
 </html>
